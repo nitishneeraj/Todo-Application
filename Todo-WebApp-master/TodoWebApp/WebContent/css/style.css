@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+nav {
+  height: 60px;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+    height: 40px;
+    margin:0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu a{
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.9s;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+.gettingStartedbtn{
+    width: 400px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid purple;
+    color: purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+}
+.gettingStartedbtn:hover{
+    border-radius: 25px;
+    color: black;
+    border-color:black;
+    background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.main-container{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    background-color: blanchedalmond;
+}
+.todobtn{
+    height: 40px;
+    background-color: darkcyan;
+    padding: 10px;
+}
+.todobtn a{
+    display: Inline-block;
+    padding: 10px;
+    background-color: darkturquoise;
+    width: 90px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.table-container{
+    border-radius: 10px;
+    position: absolute;
+    max-width: 1000px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    margin-top: -100px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.table th,td{
+    border: 1px solid black;
+    padding: 15px;
+}
